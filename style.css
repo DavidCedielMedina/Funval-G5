@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(to right, rgb(118, 118, 118), rgb(0, 0, 0));
+}
+li{
+    color: darkgreen;
+}
+
+#parrafos{
+    color: greenyellow; font-size: 25px;
+}
+.Subtitulos{
+    font-size: 25px; color: aqua;
+}
+img{
+    width: 400;
+    height: 350;
+}
