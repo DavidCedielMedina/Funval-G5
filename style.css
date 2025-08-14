@@ -3,18 +3,20 @@ body{
 }
 li{
     color: darkgreen;
+    background-color: black;
 }
 
 #parrafos{
     color: greenyellow; font-size: 25px;
+    background-color: darkgreen;
+}
+#imagen3{
+    width: 150px;
 }
 .Subtitulos{
     font-size: 25px; color: aqua;
 }
-img{
-    width: 400;
-    height: 350;
-}
+
 #Chucho{
-    width: 250px;
+    width: 150px;
 }

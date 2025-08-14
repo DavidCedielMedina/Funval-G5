@@ -1,0 +1,52 @@
+body{
+     background:  
+     linear-gradient(rgb(32, 32, 32), rgba(170, 170, 170, 0.289)),
+     url(./img/mosaico.png);
+     background-size: cover;
+     background-position: left;
+     background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.916);
+    padding: 15px;
+    margin: 50px 300px 50px 100px;
+    gap: 6px;
+    color: white;
+}
+button{
+    background-color: rgba(19, 85, 239, 0.874);
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 10px;
+    height: 15px;
+    width: 60px;
+}
+img{
+    width: 50px;
+}
+.respuestas{
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+    background-color: rgba(99, 96, 96, 0.326);
+    width: 250px;
+}
+.terminos{
+    font-size: 10px;
+}
+.soyhumano{
+    font-size: 10px;
+    background-color:rgba(148, 147, 147, 0.167);
+    border-radius: 6px;
+    border: 1px solid white;
+    width: 90px;
+    height: 30px;
+}
