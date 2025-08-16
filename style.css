@@ -1,22 +1,79 @@
-body{
-    background: linear-gradient(to right, rgb(118, 118, 118), rgb(0, 0, 0));
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}body{
+    height: 100%;
+    width: 100%;
+
+    background:
+     linear-gradient(to right, rgba(158, 156, 12, 0.778), rgba(108, 219, 247, 0.899),rgba(241, 249, 3, 0.236), rgba(253, 255, 165, 0.252)),
+     url(./imagenes.img/luffy-33.jpg);
+     background-repeat: no-repeat;
+    
 }
-li{
-    color: darkgreen;
-    background-color: black;
+header{
+    color: white;
+    height: 10%;
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 73), rgb(0, 0, 20));
+    padding: 10px;
+
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+#fotoperfil{
+    width: 150px;
 }
 
-#parrafos{
-    color: greenyellow; font-size: 25px;
-    background-color: darkgreen;
+.principal{
+    border: 2px black solid;
+    display: flex;
+    height: 100%;
+
+
 }
-#imagen3{
-    width: 150px;
+.sec2{
+    color: white;
+    width: 35%;
+    background: linear-gradient(rgb(1, 1, 42), rgb(0, 118, 245), rgb(4, 209, 236), rgb(16, 3, 137));
+    height: 50rem;
+    
+    
 }
 .Subtitulos{
-    font-size: 25px; color: aqua;
+    padding: 30px;
 }
+.lis{
+    padding: 25px;
+}
+.link{
+    color: white;
+}
+.sec1{
+    color: rgb(1, 0, 42);
+    border: 1px black solid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 50rem;
+    gap: 20px;
+}
+#parrafos{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
 
-#Chucho{
-    width: 150px;
+
+}
+footer{
+    height: 2rem;
+    color: white;
+    background: -moz-linear-gradient(rgb(1, 7, 79), rgb(0, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    bottom: 0;
 }
