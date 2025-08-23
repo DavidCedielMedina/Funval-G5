@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="todo">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body
+    class="bg-gray-300 dark:bg-gray-950 h-screen w-screen j flex flex-col justify-center items-center"
+  >
+    <div
+      class="flex flex-col card bg-gradient-to-t from-blue-800 to-blue-400 dark:bg-gradient-to-t dark:from-blue-400 dark:to-blue-50 dark:text-black text-amber-50 justify-center items-center border-2 h-[50rem] w-[20rem] p-4 rounded-2xl"
+    >
+      <img
+        src="https://www.penguinlibros.com/es/6017464-home_default/harry-potter-y-el-prisionero-de-azkaban-harry-potter-edicion-con-ilustraciones-de-xavier-bonet-3.webp "
+        alt=""
+      />
+      <h1>Harry Potter</h1>
+      <h2>Autor: Chanchito Feliz</h2>
+      <h2>
+        Historia de un mundo de fantasia en la que un joven se ve afectado por
+        uno de los magos mas poderosos de todos los tiempos...el innombreble.
+      </h2>
+      <h2>10.0$</h2>
+      <button>comprar</button>
+    </div>
+    <button id="btn" class="dark:text-red-50">dark</button>
+    <script>
+      let todo = document.querySelector("#todo");
+      let botoncito = document.querySelector("#btn");
+      botoncito.addEventListener("click", function () {
+        todo.classList.toggle("dark");
+      });
+    </script>
+  </body>
 </html>

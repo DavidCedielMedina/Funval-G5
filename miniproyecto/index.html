@@ -1,41 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="todo" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Portafolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Pirata+One&display=swap");
+    </style>
   </head>
   <body
-    class="bg-gradient-to-b from-black to-gray-900 h-100% w-100% flex flex-col"
+    class="bg-gradient-to-b from-blue-100 to-blue-300 dark:bg-gradient-to-t dark:from-blue-900 dark:to-gray-950 flex flex-col gap-6 bg-cover"
   >
     <header
-      class="border-indigo-950 p-4 justify-between flex items-center w-100% h-10"
+      style="font-family: Pirata One, system-ui"
+      class="bg- relative bg-cover bg-center p-4 justify-between flex items-center bg-gradient-to-l from-black/50 to-white/50 w-full h-8% border-2 border-amber-50"
     >
-      <div class="flex">
-        <h2 class="text-blue-400">JD</h2>
-        <h2 class="text-white">Cediel</h2>
+      <div class="opacity-10 absolute w-full h-full">
+        <img
+          class="w-full h-full object-cover"
+          src="./fondoheader.jpg"
+          alt=""
+        />
       </div>
-      <div class="">
+      <div class="flex animate-pulse">
+        <h2 class="text-black dark:text-cyan-500 text-xl">
+          <strong>JD</strong>
+        </h2>
+        <h2 class="text-indigo-600 dark:text-indigo-200 text-xl">
+          <strong>Cediel</strong>
+        </h2>
+      </div>
+      <div class="hidden sm:flex z-10">
         <nav class="">
-          <ul class="flex text-white gap-6 items-center justify-center p-2">
+          <ul
+            class="flex text-white dark:text-white gap-6 items-center justify-center p-2"
+          >
             <li
-              class="hover:bg-indigo-900 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
+              class="hover:scale-110 hover:bg-indigo-500 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
             >
               Inicio
             </li>
             <li
-              class="hover:bg-indigo-900 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
+              class="hover:scale-110 hover:bg-indigo-500 hover:dark:bg-cyan-700 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
             >
               Sobre mi
             </li>
             <li
-              class="hover:bg-indigo-900 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
+              class="hover:scale-110 hover:bg-indigo-500 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
             >
               Proyectos
             </li>
             <li
-              class="hover:bg-indigo-900 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
+              class="hover:scale-110 hover:bg-indigo-500 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
             >
               Contacto
             </li>
@@ -44,61 +62,113 @@
       </div>
       <div class="flex flex-row justify-center items-center text-white">
         <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1.1em"
-            viewBox="0 0 448 512"
-            stroke-width="0"
-            fill="currentColor"
-            stroke="currentColor"
-            class="w-5"
+          <label
+            class="relative inline-block h-7 w-[48px] cursor-pointer rounded-full bg-gray-900 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-[#1976D2]"
           >
-            <path
-              d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
-            ></path>
-          </svg>
+            <input type="checkbox" id="AcceptConditions" class="peer sr-only" />
+            <span
+              class="absolute inset-y-0 start-0 m-1 size-5 rounded-full bg-gray-300 ring-[5px] ring-inset ring-white transition-all peer-checked:start-7 bg-gray-900 peer-checked:w-2 peer-checked:bg-white peer-checked:ring-transparent"
+            ></span>
+          </label>
         </button>
       </div>
     </header>
-    <main
-      class="flex items-center justify-center gap-5 p-10 w-screen border-2 border-amber-50"
-    >
-      <div class="flex flex-col gap-4 border-2 border-amber-50 p-5 w-[10%]">
-        <h3 class="text-white text-4xl">Jesus David Cediel Medina</h3>
-        <h1 class="text-6xl text-blue-500 font-serif">
-          Desarrollador Web <br />
-          <strong class="text-indigo-700">Fontend</strong>
-        </h1>
-        <p class="text-white">
-          Soy un desarrollador frontend que se apasiona por crear y desarrollar
-          aplicaciones, interfases y sitios web, con habilidades en HTML, CSS,
-          tailwind CSS y JavaScrip, brindando una calidad en los diseños y una
-          buena ejecusion de las aplicaciones.
-        </p>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            x="0px"
-            y="0px"
-            width="100"
-            height="100"
-            viewBox="0 0 48 48"
-            class="text-white bg-indigo-600 rounded-full w-15 h-15 p-1"
+    <main class="w-full flex flex-col justify-center items-center p-8">
+      <section
+        class="sec1 flex flex-col-reverse gap-4 p-4 justify-center items-center w-screen lg:flex-row"
+      >
+        <div
+          class="flex flex-col justify-center items-center p-4 gap-4 shadow-2xl rounded-2xl bg-gradient-to-br from-blue-500/50 to-blue-400/30 dark:from-gray-700/50 dark:to-gray-500/30"
+        >
+          <h3
+            style="font-family: Pirata One, system-ui"
+            class="text-white text-3xl font-bold"
           >
-            <path
-              d="M40.6,10.57c-0.02-0.02-0.05-0.04-0.08-0.07c-2.39-1.92-5.59-2.9-7.85-3.37c-2.23-0.47-4.46,0.8-5.18,2.95 c-0.01,0.04-0.03,0.07-0.04,0.11c3.75,0.38,7.1,1.41,9.82,3.02c0.71,0.42,0.94,1.34,0.52,2.06C37.51,15.74,37.01,16,36.5,16 c-0.26,0-0.53-0.07-0.77-0.21c-3.06-1.82-7.12-2.78-11.73-2.78s-8.67,0.96-11.73,2.78c-0.72,0.42-1.64,0.19-2.06-0.52 c-0.42-0.72-0.19-1.64,0.52-2.06c2.72-1.61,6.07-2.64,9.82-3.02c-0.01-0.04-0.03-0.07-0.04-0.11c-0.72-2.15-2.95-3.42-5.18-2.95 C13.07,7.6,9.87,8.58,7.48,10.5c-0.03,0.03-0.06,0.05-0.08,0.07c-2.22,2.06-6.32,12.54-6.32,22.06c0,0.26,0.06,0.51,0.19,0.74 c2.44,4.29,8.19,5.86,10.56,6.33c0.29,0.06,0.58,0.09,0.87,0.09c1.42,0,2.79-0.68,3.64-1.86l0.52-0.71 C11.71,36,9.07,33.8,8.92,33.67c-0.63-0.54-0.71-1.48-0.17-2.11s1.48-0.71,2.11-0.18c0.08,0.07,4.49,3.64,13.14,3.64 c8.69,0,13.1-3.6,13.14-3.64c0.63-0.53,1.58-0.45,2.11,0.19c0.53,0.63,0.46,1.57-0.17,2.1c-0.15,0.13-2.79,2.33-7.94,3.55 l0.52,0.71c0.85,1.18,2.22,1.86,3.64,1.86c0.29,0,0.58-0.03,0.87-0.09c2.37-0.47,8.12-2.04,10.56-6.33 c0.13-0.23,0.19-0.48,0.19-0.74C46.92,23.11,42.82,12.63,40.6,10.57z M17.53,29.92c-1.91,0-3.46-1.77-3.46-3.96S15.62,22,17.53,22 c1.92,0,3.47,1.77,3.47,3.96S19.45,29.92,17.53,29.92z M30.44,30c-1.93,0-3.5-1.79-3.5-4c0-2.21,1.57-4,3.5-4 c1.94,0,3.5,1.79,3.5,4C33.94,28.21,32.38,30,30.44,30z"
-            ></path>
-          </svg>
+            Jesus David Cediel Medina
+          </h3>
+          <h1 class="text-5xl font-serif text-blue-500 animate-pulse">
+            Desarrollador Web
+          </h1>
+
+          <h2>
+            <strong
+              class="text-3xl font-serif text-indigo-700 dark:text-purple-600 animate-pulse"
+              >Fontend</strong
+            >
+          </h2>
+
+          <p
+            style="font-family: Pirata One, system-ui"
+            class="text-blue-900 text-xl dark:text-white"
+          >
+            Soy un desarrollador frontend que se apasiona por crear y
+            desarrollar aplicaciones, interfases y sitios web, con habilidades
+            en HTML, CSS, tailwind CSS y JavaScrip, brindando una calidad en los
+            diseños y una buena ejecusion de las aplicaciones.
+          </p>
+        </div>
+        <div class="h-80 w-60 border-amber-50">
+          <img
+            class="h-full w-full rounded-full hover:scale-110 shadow-3xl"
+            src="../Practica Calificada 1/img/Cediel Foto.jpeg"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+    <section
+      style="font-family: Pirata One, system-ui"
+      class="sec2 flex border-2 border-red-700 p-5"
+    >
+      <div class="flex-col grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div
+          style="font-family: Pirata One, system-ui"
+          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 text-black gap-4 bg-gradient-to-t from-blue-700 to-blue-400 rounded-3xl bg-[url(./img/quiensoy.jpg)] bg-cover p-2"
+        >
+          <h1 class="text-5xl"><strong>¿Quien soy?</strong></h1>
+          <p class="text-2xl">
+            Soy un joven desarrollador de software motivado en el desarrollo de
+            interfases web, me especializo en fontend, haciendo de la
+            presentacion y el funcionamiento wed de mis clientes un gran
+            reconocimiento por sus diseños destacados.
+          </p>
+        </div>
+        <div
+          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 rounded-3xl text-black gap-4 bg-[url(./img/miobjetivo.jpg)] bg-cover p-2"
+        >
+          <h1 class="text-5xl"><strong>Mi objetivo</strong></h1>
+          <p class="text-2xl">
+            Mi ovjetivo es trabajar con desafios que ayuden a mi desarrollo como
+            programador y me permitan oportunidades de crecimiento, retos que me
+            permitan llegar a ofrecer mis mayores capacidades como
+            desarrollador.
+          </p>
+        </div>
+        <div
+          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 rounded-3xl text-black gap-4 bg-[url(./img/miperfil.jpg)] bg-cover p-2"
+        >
+          <h1 class="text-5xl"><strong>Mi perfil</strong></h1>
+          <p class="text-2xl">
+            Me gusta centrar mi trabajo en una ejecucion de alta calidad, tanto
+            en funcionamiento como en el de diseño, destacando en ambos factores
+            y cumpliendo con los requerimientos solicitados por parte del
+            solicitante.
+          </p>
         </div>
       </div>
-      <div class="flex justify-center items-center">
-        <img
-          class="rounded-full h-80 w-100 hover:z-10 hover:h-110 hover:w-130"
-          src="../Practica Calificada 1/img/Cediel Foto.jpeg"
-          alt=""
-        />
+      <div></div>
+    </section>
+    <section>
+      <div>
+        <h1>Proyectos</h1>
       </div>
-    </main>
+    </section>
   </body>
+  <script>
+    let todo = document.querySelector("#todo");
+    let botoncito = document.querySelector("#AcceptConditions");
+    botoncito.addEventListener("click", function () {
+      todo.classList.toggle("dark");
+    });
+  </script>
 </html>

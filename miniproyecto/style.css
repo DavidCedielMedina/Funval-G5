@@ -1,0 +1,5 @@
+.stroke{
+    -webkit-text-stroke: 0.5px white; /* Grosor y color del borde */
+    color: black; /* Color de relleno */
+  }
+  
