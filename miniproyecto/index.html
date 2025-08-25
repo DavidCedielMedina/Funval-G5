@@ -11,20 +11,21 @@
     </style>
   </head>
   <body
-    class="bg-gradient-to-b from-blue-100 to-blue-300 dark:bg-gradient-to-t dark:from-blue-900 dark:to-gray-950 flex flex-col gap-6 bg-cover"
+    id="inicio"
+    class="bg-gradient-to-b from-blue-50 to-blue-300 dark:bg-gradient-to-t dark:from-blue-900 dark:to-gray-950 flex flex-col gap-6"
   >
     <header
       style="font-family: Pirata One, system-ui"
-      class="bg- relative bg-cover bg-center p-4 justify-between flex items-center bg-gradient-to-l from-black/50 to-white/50 w-full h-8% border-2 border-amber-50"
+      class="relative lg:sticky top-0 z-50 bg-cover bg-center justify-between flex items-center bg-gradient-to-l from-black/50 to-white/50 w-full shadow-2xl h-[8%]"
     >
-      <div class="opacity-10 absolute w-full h-full">
+      <div class="opacity-80 absolute w-full h-full">
         <img
           class="w-full h-full object-cover"
           src="./fondoheader.jpg"
           alt=""
         />
       </div>
-      <div class="flex animate-pulse">
+      <div class="flex animate-pulse px-3">
         <h2 class="text-black dark:text-cyan-500 text-xl">
           <strong>JD</strong>
         </h2>
@@ -32,38 +33,38 @@
           <strong>Cediel</strong>
         </h2>
       </div>
-      <div class="hidden sm:flex z-10">
+      <div class="hidden md:flex z-10">
         <nav class="">
           <ul
-            class="flex text-white dark:text-white gap-6 items-center justify-center p-2"
+            class="stroke flex text-white text-2xl lg:text-4xl dark:text-white gap-6 items-center justify-center p-2"
           >
             <li
               class="hover:scale-110 hover:bg-indigo-500 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
             >
-              Inicio
+              <a href="#inicio">Inicio</a>
             </li>
             <li
               class="hover:scale-110 hover:bg-indigo-500 hover:dark:bg-cyan-700 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
             >
-              Sobre mi
+              <a href="#sobremi">Sobre mi</a>
             </li>
             <li
               class="hover:scale-110 hover:bg-indigo-500 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
             >
-              Proyectos
+              <a href="#proyectos">Proyectos</a>
             </li>
             <li
               class="hover:scale-110 hover:bg-indigo-500 pr-1 pl-1 rounded-2xl cursor-pointer hover:ring-1 hover:ring-sky-300 flex justify-center items-center"
             >
-              Contacto
+              <a href="#contacto">Contacto</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="flex flex-row justify-center items-center text-white">
-        <button>
+        <button class="px-3">
           <label
-            class="relative inline-block h-7 w-[48px] cursor-pointer rounded-full bg-gray-900 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-[#1976D2]"
+            class="relative inline-block h-7 w-[48px] cursor-pointer rounded-full bg-yellow-500/60 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-[#08004ba7]"
           >
             <input type="checkbox" id="AcceptConditions" class="peer sr-only" />
             <span
@@ -86,7 +87,9 @@
           >
             Jesus David Cediel Medina
           </h3>
-          <h1 class="text-5xl font-serif text-blue-500 animate-pulse">
+          <h1
+            class="text-3xl md:text-5xl font-serif text-blue-500 animate-pulse"
+          >
             Desarrollador Web
           </h1>
 
@@ -106,24 +109,93 @@
             en HTML, CSS, tailwind CSS y JavaScrip, brindando una calidad en los
             diseños y una buena ejecusion de las aplicaciones.
           </p>
+          <div class="flex gap-4">
+            <svg
+              class="lg:hover:animate-bounce"
+              width="80px"
+              height="80px"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26" />
+              <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529" />
+              <path
+                d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              class="lg:hover:animate-bounce"
+              width="80px"
+              height="80px"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8" />
+              <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD" />
+              <path
+                d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+                fill="white"
+              />
+            </svg>
+            <svg
+              class="lg:hover:animate-bounce"
+              width="80px"
+              height="80px"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="2" y="2" width="28" height="28" fill="#FFCA28" />
+              <path
+                d="M19 25.2879L21.0615 23.9237C21.2231 24.4313 22.2462 25.6368 23.5385 25.6368C24.8308 25.6368 25.4308 24.931 25.4308 24.463C25.4308 23.1878 24.1112 22.7382 23.4774 22.5223C23.374 22.4871 23.289 22.4581 23.2308 22.4328C23.2009 22.4198 23.1558 22.4025 23.0979 22.3804C22.393 22.1111 19.7923 21.1175 19.7923 18.2373C19.7923 15.065 22.8538 14.7002 23.5462 14.7002C23.9991 14.7002 26.1769 14.7557 27.2615 16.7939L25.2615 18.1898C24.8231 17.3015 24.0946 17.0081 23.6462 17.0081C22.5385 17.0081 22.3077 17.8201 22.3077 18.1898C22.3077 19.227 23.5112 19.6919 24.5273 20.0844C24.7932 20.1871 25.0462 20.2848 25.2615 20.3866C26.3692 20.91 28 21.7666 28 24.463C28 25.8136 26.8672 28.0002 24.0154 28.0002C20.1846 28.0002 19.1692 25.7003 19 25.2879Z"
+                fill="#3E3E3E"
+              />
+              <path
+                d="M9 25.5587L11.1487 24.1953C11.317 24.7026 11.9713 25.638 12.9205 25.638C13.8698 25.638 14.3557 24.663 14.3557 24.1953V15.0002H16.9982V24.1953C17.041 25.4636 16.3376 28.0002 13.2332 28.0002C10.379 28.0002 9.19242 26.3039 9 25.5587Z"
+                fill="#3E3E3E"
+              />
+            </svg>
+            <svg
+              class="lg:hover:animate-bounce"
+              width="80px"
+              height="80px"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>file_type_tailwind</title>
+              <path
+                d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+                style="fill: #44a8b3"
+              />
+            </svg>
+          </div>
         </div>
         <div class="h-80 w-60 border-amber-50">
           <img
-            class="h-full w-full rounded-full hover:scale-110 shadow-3xl"
-            src="../Practica Calificada 1/img/Cediel Foto.jpeg"
+            class="h-full w-full rounded-full"
+            src="./img/yo-removebg-preview.png"
             alt=""
           />
         </div>
       </section>
     </main>
     <section
+      id="sobremi"
       style="font-family: Pirata One, system-ui"
-      class="sec2 flex border-2 border-red-700 p-5"
+      class="sec2 flex flex-col p-5 gap-8"
     >
-      <div class="flex-col grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div class="flex w-full justify-center items-center">
+        <h1 class="text-6xl dark:text-white animate-bounce text-shadow-lg">
+          Sobre mi
+        </h1>
+      </div>
+      <div class="flex-col grid grid-cols-1 lg:grid-cols-3 gap-10 lg:p-5">
         <div
           style="font-family: Pirata One, system-ui"
-          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 text-black gap-4 bg-gradient-to-t from-blue-700 to-blue-400 rounded-3xl bg-[url(./img/quiensoy.jpg)] bg-cover p-2"
+          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 text-black gap-4 bg-gradient-to-t from-blue-700 to-blue-400 rounded-3xl bg-[url(./img/quiensoy.jpg)] bg-cover p-2 lg:hover:scale-110 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
         >
           <h1 class="text-5xl"><strong>¿Quien soy?</strong></h1>
           <p class="text-2xl">
@@ -134,7 +206,7 @@
           </p>
         </div>
         <div
-          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 rounded-3xl text-black gap-4 bg-[url(./img/miobjetivo.jpg)] bg-cover p-2"
+          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 rounded-3xl text-black gap-4 bg-[url(./img/miobjetivo.jpg)] bg-cover p-2 lg:hover:scale-110 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
         >
           <h1 class="text-5xl"><strong>Mi objetivo</strong></h1>
           <p class="text-2xl">
@@ -145,7 +217,7 @@
           </p>
         </div>
         <div
-          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 rounded-3xl text-black gap-4 bg-[url(./img/miperfil.jpg)] bg-cover p-2"
+          class="stroke flex flex-col items-center shadow-2xl shadow-blue-950 dark:shadow-gray-600 rounded-3xl text-black gap-4 bg-[url(./img/miperfil.jpg)] bg-cover p-2 lg:hover:scale-110 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
         >
           <h1 class="text-5xl"><strong>Mi perfil</strong></h1>
           <p class="text-2xl">
@@ -156,11 +228,166 @@
           </p>
         </div>
       </div>
-      <div></div>
     </section>
-    <section>
+
+    <div class="flex items-center justify-center h-full">
+      <button
+        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        type="button"
+      >
+        Facebook
+      </button>
+      <button
+        class="text-white bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        type="button"
+      >
+        WhatsApp
+      </button>
+      <button
+        class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        type="button"
+      >
+        Twitter
+      </button>
+      <button
+        class="text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        type="button"
+      >
+        Instagram
+      </button>
+    </div>
+
+    <section
+      id="proyectos"
+      class="flex flex-col gap-6 justify-center items-center p-8 m-4"
+    >
       <div>
-        <h1>Proyectos</h1>
+        <h1
+          style="font-family: Pirata One, system-ui"
+          class="text-shadow-lg text-6xl flex dark:text-white animate-bounce"
+        >
+          Proyectos
+        </h1>
+      </div>
+      <div
+        class="gap-4 grid grid-cols-1 md:grid-cols-2 place-content-stretch lg:grid-cols-4"
+      >
+        <div class="grid justify-center items-center">
+          <img
+            class="rounded-2xl shadow-xl h-60 w-60 object-cover lg:hover:scale-105 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
+            src="./img/TheSimpsons.png"
+            alt=""
+          />
+        </div>
+        <div class="grid justify-center items-center">
+          <img
+            class="rounded-2xl shadow-2xl h-60 w-60 object-cover lg:hover:scale-105 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
+            src="./img/stream.png"
+            alt=""
+          />
+        </div>
+        <div class="grid justify-center items-center">
+          <img
+            class="rounded-2xl shadow-2xl h-60 w-60 object-cover lg:hover:scale-105 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
+            src="./img/web.png"
+            alt=""
+          />
+        </div>
+
+        <div class="grid justify-center items-center">
+          <img
+            class="rounded-2xl shadow-2xl h-60 w-60 object-cover lg:hover:scale-105 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
+            src="./img/LIGH.png"
+            alt=""
+          />
+        </div>
+        <div class="grid justify-center items-center">
+          <img
+            class="rounded-2xl shadow-2xl h-60 w-60 object-cover lg:hover:scale-105 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
+            src="./img/DARK (1).png"
+            alt=""
+          />
+        </div>
+        <div class="grid justify-center items-center">
+          <img
+            class="rounded-2xl shadow-2xl h-60 w-60 object-cover lg:hover:scale-105 lg:hover:ring-2 lg:hover:ring-blue-800 lg:hover:dark:ring-cyan-400"
+            src="./img/MUSICA.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="flex flex-col p-15 m-4 gap-8">
+      <div
+        style="font-family: Pirata One, system-ui"
+        class="flex w-full justify-center items-center"
+      >
+        <h1 class="text-6xl dark:text-white animate-bounce text-shadow-lg">
+          Contactame
+        </h1>
+      </div>
+      <div
+        style="font-family: Pirata One, system-ui"
+        class="active:ring-4 active:ring-blue-800 max-w-md mx-auto relative overflow-hidden z-10 bg-gray-800 p-8 rounded-lg gap-6 shadow-md before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12 lg:hover:scale-105"
+      >
+        <h2 class="text-3xl font-bold text-white mb-6">Trabajemos Juntos</h2>
+        <p class="text-xl text-white">
+          Se que con mis capacidades estoy listo para desarrollar el proyecto
+          que tienes en mente, si deseas contratar mis servicios no dudes en
+          escrirme y ponerte en contacto conmigo para poder ayudarte a crear tu
+          sitio web.
+        </p>
+
+        <form class="gap-3 py-3" method="post" action="#">
+          <div class="mb-4">
+            <label
+              class="block text-sm font-medium text-gray-300"
+              for="name"
+              aria-placeholder=" Nombre"
+              >Nombre Completo</label
+            >
+            <input
+              placeholder="Escribe tu Nombre"
+              class="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white"
+              type="text"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-300" for="email"
+              >Correo Electronico</label
+            >
+            <input
+              placeholder="Correo Electronico"
+              class="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white invalid:border-red-600 invalid:border-2"
+              name="email"
+              id="email"
+              type="email"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-300" for="bio"
+              >¿Que trabajo tienes para mi?</label
+            >
+            <textarea
+              placeholder="¿Como te puedo ayudar?"
+              class="mt-1 p-2 w-full bg-gray-700 border border-gray-600 rounded-md text-white"
+              rows="3"
+              name="bio"
+              id="bio"
+            ></textarea>
+          </div>
+
+          <div class="flex justify-end">
+            <button
+              class="bg-gradient-to-r from-purple-600 via-purple-400 to-blue-500 text-white px-4 py-2 font-bold rounded-md hover:opacity-80"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   </body>

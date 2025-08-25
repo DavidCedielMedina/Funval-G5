@@ -10,7 +10,7 @@
     <header
       class="flex justify-between items-center px-3 py-2 bg-gradient-to-r from-emerald-900 to-emerald-600"
     >
-      <div class="flex border-2 gap-2">
+      <div class="flex gap-2">
         <div class="menu">
           <button>
             <svg
@@ -48,8 +48,8 @@
           </button>
         </div>
       </div>
-      <div class="border-2">Melodía Urbana</div>
-      <div class="border-2">
+      <div class="">Melodía Urbana</div>
+      <div class="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -69,10 +69,10 @@
     <main class="bg-emerald-100 p-2 gap-3 flex">
       <div class="flex flex-col gap-3">
         <section
-          class="hero flex border-2 bg-gradient-to-l from-emerald-400 to-emerald-100 p-3 gap-2 text-black rounded-3xl"
+          class="hero flex bg-gradient-to-l from-emerald-400 to-emerald-100 p-3 gap-2 text-black rounded-3xl"
         >
-          <div class="">
-            <h1>Melodía Urbana</h1>
+          <div class="font-serif">
+            <h1 class="text-4xl">Melodía Urbana</h1>
             <p>
               En Melodía Urbana encontrarás el instrumento perfecto para dar
               vida a tu música. Desde guitarras y pianos hasta baterías y
@@ -84,17 +84,19 @@
             </p>
           </div>
           <div class="h-full">
-            <img src="./img/fondo.jpg" alt="" />
+            <img class="h-full" src="./img/fondo.jpg" alt="" />
           </div>
         </section>
         <section
           class="cards grid grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-10 p-3"
         >
           <div
-            class="flex flex-col-reverse bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl"
+            class="flex flex-col-reverse lg:flex-row bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl"
           >
-            <div class="justify-center items-center flex flex-col p-2.5">
-              <h1>trompeta</h1>
+            <div
+              class="justify-center items-center flex flex-col p-2.5 font-serif"
+            >
+              <h1 class="text-2xl">Trompeta</h1>
               <p>
                 En Melodía Urbana sabemos que la trompeta no es solo un
                 instrumento, es una voz poderosa que transmite emoción y energía
@@ -119,10 +121,10 @@
             </div>
           </div>
           <div
-            class="flex flex-col-reverse bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl"
+            class="flex flex-col-reverse lg:flex-row bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl font-serif"
           >
             <div class="justify-center items-center flex flex-col p-2.5">
-              <h1>Clarinete</h1>
+              <h1 class="text-2xl">Clarinete</h1>
               <p>
                 En Melodía Urbana el clarinete ocupa un lugar especial por su
                 sonido cálido y versátil. Este instrumento de viento-madera es
@@ -147,10 +149,10 @@
             </div>
           </div>
           <div
-            class="flex flex-col-reverse bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl"
+            class="flex flex-col-reverse lg:flex-row bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl font-serif"
           >
             <div class="justify-center items-center flex flex-col p-2.5">
-              <h1>saxofón alto</h1>
+              <h1 class="text-2xl">Saxofón alto</h1>
               <p>
                 En Melodía Urbana, el saxofón alto destaca por su sonido
                 brillante, expresivo y lleno de personalidad. Es el favorito en
@@ -177,10 +179,10 @@
             </div>
           </div>
           <div
-            class="flex flex-col-reverse bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl"
+            class="flex flex-col-reverse lg:flex-row bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl font-serif"
           >
             <div class="justify-center items-center flex flex-col p-2.5">
-              <h1>saxofón barítono</h1>
+              <h1 class="text-2xl">Saxofón barítono</h1>
               <p>
                 En Melodía Urbana, el saxofón barítono se impone con su sonido
                 profundo, robusto y lleno de carácter. Es el alma grave de la
@@ -205,10 +207,10 @@
             </div>
           </div>
           <div
-            class="flex flex-col-reverse bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl"
+            class="flex flex-col-reverse lg:flex-row bg-gradient-to-t from-emerald-200 to-emerald-400 rounded-3xl font-serif"
           >
             <div class="justify-center items-center flex flex-col p-2.5">
-              <h1>tuba</h1>
+              <h1 class="text-2xl">Tuba</h1>
               <p>
                 En Melodía Urbana, la tuba brilla como el pilar sonoro de las
                 bandas y orquestas. Con su potencia y profundidad, este
@@ -236,19 +238,19 @@
         </section>
       </div>
 
-      <aside class="bg-amber-400 hidden lg:flex p-20">
-        <nav>
-          <ul>
-            <li>instrumento 1</li>
-            <li>instrumento 2</li>
-            <li>instrumento 3</li>
-            <li>instrumento 4</li>
-            <li>instrumento 5</li>
-            <li>instrumento 6</li>
-            <li>instrumento 7</li>
-            <li>instrumento 8</li>
-            <li>instrumento 9</li>
-            <li>instrumento 10</li>
+      <aside class="hidden lg:flex p-20 border-2 bg-amber-300">
+        <nav class="text-white text-2xl font-serif lg:bg-amber-400">
+          <ul class="flex flex-col gap-6">
+            <li>Trompetas</li>
+            <li>Clarinetes</li>
+            <li>Saxofones</li>
+            <li>Tubas</li>
+            <li>Guitarras</li>
+            <li>Baritonos</li>
+            <li>Bombardinos</li>
+            <li>Gaitas</li>
+            <li>Trombones</li>
+            <li>Cañas</li>
           </ul>
         </nav>
       </aside>
