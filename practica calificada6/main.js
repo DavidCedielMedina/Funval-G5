@@ -1,52 +1,28 @@
-/* function ingresar(valor1) {
+function ingresar(valor1) {
     return valor1+saldo
 };
 function retirar(valor1) {
     return saldo-valor1
-}; */
+}; 
 
 
-    let intro = false; // para controlar el ciclo
+let intro = false; 
 let nombreUsuario;
 let clave;
 
 do {
-  nombreUsuario = prompt("Ingresa el usuario").toLowerCase(); // lo paso a minúsculas
+  nombreUsuario = prompt("Ingresa el usuario").toLowerCase(); 
   clave = parseInt(prompt("Ingresa tu contraseña de 4 dígitos"));
 
   if (nombreUsuario === "jesus" && clave === 2468) {
     alert(nombreUsuario + " bienvenido, tu usuario y contraseña son correctas");
-    intro = true; // ya entró correctamente
+    intro = true; 
   } else {
     alert("Vuelve a intentarlo");
   }
-} while (intro === false);
+} while (intro === false) 
 
-/* } while (intro === false);
-
-let nombreUsuario =prompt("Ingresa el usuario")
-    let clave=parseInt(prompt("ingresa tu contraseña de 4 digitos"))
-    do {
-        (intro===nombreUsuario.toLocaleLowerCase("jesus") && clave===2468); {
-            intro=true
-            
-        alert(nombre+ " bienvenido tu usuario y contraseña son correctas")
-        ( alert("vuelve a intentarlo")) 
-     }
-        
-    } while (intro==true); */
-      
-     
-        
-    
-
-    
-
-
-
-
-
-/* let saldo=100.0;
+ let saldo=100.0;
 let menu;
 do{ menu=parseInt(prompt(`seleccione su tipo de transaccion:
 
@@ -102,4 +78,4 @@ case 4:
 }}
         while (menu !== 4);
 
- */
+ 
