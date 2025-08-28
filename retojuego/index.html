@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Juego</title>
+  </head>
+  <body class="flex justify-center items-center h-screen w-full bg-[#1a2b33]">
+    <section class="w-80 p-3">
+      <header class="flex justify-around gap-3 items-center py-2">
+        <div class="flex gap-2 text-2xl">
+          <h1 class="text-amber-400"><strong> X</strong></h1>
+          <h1 class="text-blue-700"><strong> O</strong></h1>
+        </div>
+        <div
+          class="bg-[#1f363e] text-white py-1 px-4 rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          TURN
+        </div>
+        <button>
+          <svg
+            class="bg-[#acbfc6] rounded-sm"
+            width="35px"
+            height="35px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.4">
+              <path
+                d="M13.67 7.51025C13.17 7.36025 12.62 7.26025 12 7.26025C9.24 7.26025 7 9.50025 7 12.2603C7 15.0203 9.24 17.2603 12 17.2603C14.76 17.2603 17 15.0203 17 12.2603C17 11.2303 16.69 10.2803 16.16 9.48026"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.3807 7.65024L12.7207 5.74023"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.3795 7.65039L12.4395 9.07039"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+        </button>
+      </header>
+      <div class="grid grid-cols-3 grid-rows-3 text-white">
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          X
+        </div>
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          O
+        </div>
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          O
+        </div>
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          X
+        </div>
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        ></div>
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          X
+        </div>
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          X
+        </div>
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          O
+        </div>
+        <div
+          class="bg-[#1e3640] p-4 m-4 flex justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          O
+        </div>
+      </div>
+      <footer class="grid grid-cols-3">
+        <div
+          class="bg-[#f2b237] text-white px-4 m-4 flex flex-col justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          <h2>X(YOU)</h2>
+          <h3>18</h3>
+        </div>
+        <div
+          class="bg-[#a8bec9] text-white px-4 m-4 flex flex-col justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          <h2>TIES</h2>
+          <h3>3:00</h3>
+        </div>
+        <div
+          class="bg-[#31c4be] text-white px-4 m-4 flex flex-col justify-center items-center rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.5)]"
+        >
+          <h2>O(CPU)</h2>
+          <h3>20</h3>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
