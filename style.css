@@ -26,6 +26,7 @@ h1{
 }
 #fotoperfil{
     width: 150px;
+    border-radius: 1rem;
 }
 
 .principal{
@@ -47,10 +48,17 @@ h1{
     padding: 30px;
 }
 .lis{
-    padding: 25px;
+    gap: 1rem;
+    
+}
+.lis:hover{
+    text-shadow: violet;    
 }
 .link{
     color: white;
+}
+.link:hover{
+    scale: 1.05;
 }
 .sec1{
     color: rgb(1, 0, 42);
@@ -76,4 +84,8 @@ footer{
     justify-content: center;
     align-items: initial;
     bottom: 0;
+}
+.aside{
+    
+    padding: 2rem;
 }
