@@ -39,3 +39,6 @@ console.log(productosOrdenados);
 let reversalist = productosOrdenados.reverse();
 console.log(reversalist)
 
+
+
+

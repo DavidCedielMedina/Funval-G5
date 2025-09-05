@@ -1,4 +1,4 @@
-/* let estudiantesFunval1 = [
+ let estudiantesFunval1 = [
   "Pedro",
   "David",
   "Nefi",
@@ -6,16 +6,16 @@
   "Roberto",
   "Mario",
   ""
-]; */
-
-/* if (estudiantesFunval1.includes("luis")) {//usando inclutes, metodo
+]; 
+//usando inclutes, metodo
+ /* if (estudiantesFunval1.includes("luis")) {
     console.log("luis está en esta lista");
 } else {
     console.log("luis no está en la lista");
-}
- */
+} */
+ 
 //solucion 1
- /* let verdadero1;
+  let verdadero1;
  let verdadero2;
 for ( let index = 0 ; index < estudiantesFunval1.length; index++) {
     if (estudiantesFunval1[index]==="luis") {
@@ -41,7 +41,7 @@ for ( let index = 0 ; index < estudiantesFunval1.length; index++) {
         console.log("santiago esta en esta lista")
     } else {
         console.log("santiago no esta en la lista")
-    } */ 
+    }  
 
 //solucion 2
 /* let verdadero=false
@@ -56,14 +56,14 @@ if (!verdadero) {
     console.log("no esta")
 } */
 //funcion para sacar promedio
-function promedio(array) {
+/* function promedio(array) {
     for (let index = 0; index < array.length; index++) {
             suma=(suma+array[index].valor)
             total=suma  
     }
 
     console.log(total/array.length)  
-}
+} */
 
  
 /* se le dara un array de notas de un estudiante debera sacar el promedio
