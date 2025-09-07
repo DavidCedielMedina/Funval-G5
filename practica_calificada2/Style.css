@@ -19,6 +19,7 @@ form{
     margin: 50px 300px 50px 100px;
     gap: 6px;
     color: white;
+    border-radius: 10px;
 }
 button{
     background-color: rgba(19, 85, 239, 0.874);
