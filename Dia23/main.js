@@ -13,8 +13,12 @@ traerData();
 
 const { info } = require("autoprefixer");*/
 
+/* const { data } = require("autoprefixer") */
+
+
+
 //----------ejercicio--------------
-let cajita=document.getElementById("cajita")
+/* let cajita=document.getElementById("cajita")
 
 fetch("https://jsonplaceholder.typicode.com/users")
 .then((info)=>info.json())
@@ -39,6 +43,42 @@ fetch("https://jsonplaceholder.typicode.com/users")
 </div>
 `
     });
-});
+}); */
 
 
+/* axios("https://jsonplaceholder.typicode.com/posts")
+.then(({data})=> console.log(data))
+.catch((Error)=>console.log(Error))
+
+async function extraer() {
+    try {
+     let {data}= await axios("https://jsonplaceholder.typicode.com/posts");
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+extraer(); */
+
+/* 
+  solo quiero q rendericen a los usuarios q tengan mas de 25 años y ademas 
+  quiero q puedan mostrar los hobbies pero con colores diferentes 
+  ejemplo
+  videjuegos red svg mando
+  caminar  verde  una persona corriendo
+  ver peliculas azul cinta*/
+
+axios("./usuarios.json")
+    .then(({data})=>{
+        console.log(data)
+    })
+    .catch((error)=>{
+        console.log(error)
+    })
+
+let cajita=document.getElementById("cajita")
+
+data.filter(({edad})=>edad>25);{
+    console.log(data)
+}
