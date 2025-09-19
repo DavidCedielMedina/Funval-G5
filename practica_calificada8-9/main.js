@@ -1,17 +1,47 @@
 //----declaraciones----
-let clickselecX=document.getElementById("selecX");
-let clickselecO=document.getElementById("selecO");
-let clickgameCPU=document.getElementById("GameCPU");
-let clickgamePlayer=document.getElementById("GamePlayer");
-const cj=document.querySelectorAll(".cj");
+let intro=document.getElementById("intro");
+let selecX=document.getElementById("selecX");
+let selecO=document.getElementById("selecO");
+let gameCPU=document.getElementById("GameCPU");
+let gamePlayer=document.getElementById("GamePlayer");
+let retum=document.getElementById("retum")
+let cajamayor=document.getElementById("cajamayor")
+let juego=document.getElementById("juego");
+let cj=document.querySelectorAll(".cj");
 let tablerodeJugadas=[null,null,null,null,null,null,null,null,null];
 let modalsito=document.getElementById("modalsito")
+//--------logica del inicio-------
+selecO.addEventListener("click",function selec() {
+  
+})
 
+function clickSelec(x,y) {
+  x.addEventListener(("click"),()=>{
+    x.classList.toggle("bg-gray-600")
+    y.classList.remove("bg-gray-600")
+  })
+    
+  
+    y.addEventListener(("click"),()=>{
+    y.classList.toggle("bg-gray-600")
+    x.classList.remove("bg-gray-600")}) 
+    
+  }
+
+  function starPlayer(x,y,z) {
+    x.addEventListener("click",()=>{
+    y.classList.toggle("hidden")
+    z.classList.toggle("hidden")
+    })    
+  }
+    
+starPlayer(gamePlayer,juego,intro)
+clickSelec(selecX,selecO)
 
 
 
 //--------logica--------
-function ganador() {
+function ganador(x,y) {
   const casosGanadores=[
      [0,1,2],
      [3,4,5],
@@ -22,16 +52,10 @@ function ganador() {
      [0,4,8],
      [6,4,2]
 ];
-for (let index = 0; index < casosGanadores.length; index++) {
-  let [a,b,c]=casosGanadores[index];
-  if (tablerodeJugadas[a] && tablerodeJugadas[a]===tablerodeJugadas[b]&& tablerodeJugadas[a]===tablerodeJugadas[c]) {
-    return tablerodeJugadas[a];}}
-    if (!tablerodeJugadas.includes(null)) {
-    return "empate";
-  }
-    return null;
+return casosGanadores.some((casosGanadores)=>
+casosGanadores.every((index)=>x[index]===y))
 } 
-modalsito.classList.replace("hidden","flex")
+
 
 //----selec x || o-----
 
@@ -78,25 +102,36 @@ const svgX=`<svg
 let playerInit=svgX
 
 
+//-------cambio de turno---------
 function cambioDeTurno() {
   playerInit=(playerInit== svgX) ? svgO:svgX
 }
-
-cj.forEach(celda => {
-    celda.addEventListener("click", () => {   
+//-------verificacion de ganador-------
+ function winner(params) {
+  
+ }
+//------juego-------
+  cj.forEach(celda => {
+    celda.addEventListener("click", () => {
+    if (celda.innerHTML!=="") return;
     celda.innerHTML = playerInit;
+    if(ganador(tablerodeJugadas,playerInit)){
+      modalsito.classList.remove("hidden");
+      return;
+    }
     cambioDeTurno()
   });
 });
+cambioDeTurno();
 
+//--------click para reiniciar--------
+retum.addEventListener("click",(()=>{
+  cj.forEach(celda => {
+    celda.innerHTML = "";
+    playerInit=svgX
+  });
+}))
 
- /* let gamePlayer=clickgamePlayer.addEventListener("click",() => {})  */
-/* let selecX=clickselecX.addEventListener("click") */
-/* selecO=clickselecO.addEventListener("click")
-gameCPU=clickgameCPU.addEventListener("click")
- */
-/*let verificacionX=true;
-let verificacionO=false;*/
-
+console.log(cajamayor)
 
 
